@@ -14,7 +14,7 @@ class KmCli < Formula
       ldflags = %W[
         -s -w
         -X mt-cli/tools/km-cli/internal/version.Version=#{version}
-        -X mt-cli/tools/km-cli/internal/version.Commit=#{Utils.git_short_head}
+        -X mt-cli/tools/km-cli/internal/version.Commit=e285042
       ]
       system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/km-cli"
     end
