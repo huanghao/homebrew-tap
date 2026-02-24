@@ -12,7 +12,7 @@ class GitHubPrivateRepositoryReleaseDownloadStrategy < CurlDownloadStrategy
       puts "Already downloaded: #{cached_location}"
     else
       begin
-        curl_download url, "--location", "--output", temporary_path.to_s, "--header", "Authorization: token #{token}", timeout:
+        curl_download url, "--header", "Authorization: token #{token}", to: temporary_path, timeout:
       rescue ErrorDuringExecution
         raise CurlDownloadStrategyError, url
       end
