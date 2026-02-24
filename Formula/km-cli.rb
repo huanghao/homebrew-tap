@@ -53,7 +53,7 @@ class KmCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/huanghao/mt-cli/releases/download/v0.2.3/km-cli_0.2.3_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "d4ffee564c6e55dc176b23b10adcbd94c92f01ca96ec3babf6f11e28f6803473"
+      sha256 "59be3ef786b646031403e5f03feab9e770b841bef48b963eca34cec439359626"
 
       define_method(:install) do
         bin.install "km-cli"
@@ -61,7 +61,7 @@ class KmCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/huanghao/mt-cli/releases/download/v0.2.3/km-cli_0.2.3_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "77767ea10d139468823181483ee597ae2b231a812263a28e0ad2e8689cc787da"
+      sha256 "58410d92bbafc3ec95bf16c20900c5a13c442de5a37d6b18a92f4a24c6193a67"
 
       define_method(:install) do
         bin.install "km-cli"
@@ -72,14 +72,14 @@ class KmCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/huanghao/mt-cli/releases/download/v0.2.3/km-cli_0.2.3_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "84bf3275a378edc9c39a6d5c5da9b25286b6569e8c7a281868d859652db67af2"
+      sha256 "987ba49112996a1536aeef9061e48c7a2309620105a087ccad21b5ccdcf516e5"
       define_method(:install) do
         bin.install "km-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/huanghao/mt-cli/releases/download/v0.2.3/km-cli_0.2.3_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "d707bdce1025b51c88a5e9b6a4c2e0513d0a8e1457cbafd52a1813c64a8e4d85"
+      sha256 "4d9ecfef35215f4257fd7a7d95469fe8a464d557d9dc841de05c2f343caea5af"
       define_method(:install) do
         bin.install "km-cli"
       end
