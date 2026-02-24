@@ -4,7 +4,7 @@ class KmCli < Formula
   url "ssh://git@github.com/huanghao/mt-cli.git",
       using: :git,
       tag: "v0.1.0",
-      revision: "6778e06bd89e6f6fbe3753226d67ee493e8ec8bb"
+      revision: "e285042f8da93f50ef351f034dfcad4a98cb4222"
   version "0.1.0"
 
   depends_on "go" => :build
