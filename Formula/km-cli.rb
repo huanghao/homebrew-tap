@@ -1,7 +1,8 @@
 class KmCli < Formula
   desc "CLI tool for KM document operations"
   homepage "https://github.com/huanghao/mt-cli"
-  url "git@github.com:huanghao/mt-cli.git",
+  url "ssh://git@github.com/huanghao/mt-cli.git",
+      using: :git,
       tag: "v0.1.0",
       revision: "6778e06bd89e6f6fbe3753226d67ee493e8ec8bb"
   version "0.1.0"
