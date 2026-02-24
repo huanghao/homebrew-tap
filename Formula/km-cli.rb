@@ -21,6 +21,6 @@ class KmCli < Formula
   end
 
   test do
-    assert_match "km-cli", shell_output("#{bin}/km-cli version")
+    assert_match "KM command line tool", shell_output("#{bin}/km-cli --help")
   end
 end
