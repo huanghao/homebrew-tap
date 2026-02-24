@@ -5,21 +5,21 @@
 class KmCli < Formula
   desc "CLI tool for KM document operations"
   homepage "https://github.com/huanghao/mt-cli"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/huanghao/mt-cli/releases/download/v0.2.1/km-cli_0.2.1_darwin_amd64.tar.gz"
-      sha256 "3adb12623602e40311cc161759909bbd7ab97a02470a39ec37933dde7ef53cf1"
+      url "https://github.com/huanghao/mt-cli/releases/download/v0.2.2/km-cli_0.2.2_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "c582fd9bd3b462e39ce1bd11312625267f9b439d2b8a15d87e8a9db6c99e37ec"
 
       define_method(:install) do
         bin.install "km-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/huanghao/mt-cli/releases/download/v0.2.1/km-cli_0.2.1_darwin_arm64.tar.gz"
-      sha256 "2a39d9c82af3843eddcf4a26227b40d5ce8545c7ab84e724d95491e8f380b530"
+      url "https://github.com/huanghao/mt-cli/releases/download/v0.2.2/km-cli_0.2.2_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "cdd494ae3a33cb5d890df01da95477df0f81ebccf8e534e28852ac22dbab10d4"
 
       define_method(:install) do
         bin.install "km-cli"
@@ -29,15 +29,15 @@ class KmCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/huanghao/mt-cli/releases/download/v0.2.1/km-cli_0.2.1_linux_amd64.tar.gz"
-      sha256 "ddc650f7cfcbff59163946c3b833abe307a0cc05be830be64715347ba1f945de"
+      url "https://github.com/huanghao/mt-cli/releases/download/v0.2.2/km-cli_0.2.2_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "4afbf64ed549f1ce320a64dfae344d6b9535d30563845072c02a2c249abb1c86"
       define_method(:install) do
         bin.install "km-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/huanghao/mt-cli/releases/download/v0.2.1/km-cli_0.2.1_linux_arm64.tar.gz"
-      sha256 "bdf9dd7dbdb3fe671c7ada92da5ae682ac84e5c3b0f445fc7886ec0f533c1b2b"
+      url "https://github.com/huanghao/mt-cli/releases/download/v0.2.2/km-cli_0.2.2_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "7acad795407bb6fa3f7ae3e5369f9c621c212ef4008b86804d95005667eb666b"
       define_method(:install) do
         bin.install "km-cli"
       end
